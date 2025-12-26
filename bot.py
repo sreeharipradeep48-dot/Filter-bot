@@ -48,7 +48,7 @@ async def start(client, message):
         reply_markup=buttons
     )
 
-@app.on_message(filters.text & ~filters.command)
+@app.on_message(filters.text & ~filters.command())
 async def auto_filter(client, message):
     text = message.text.lower()
 
@@ -58,5 +58,4 @@ async def auto_filter(client, message):
         await message.reply_text("🎵 Song Found!")
     else:
         await message.reply_text("❌ No Result Found.")
-
 app.run()
