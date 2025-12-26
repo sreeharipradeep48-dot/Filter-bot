@@ -17,26 +17,26 @@ async def start(client, message):
             [
                 InlineKeyboardButton(
                     "🎬 Trixel Movie Group",
-                    url="https://t.me/TRIXEL_MOVIE"
+                    url="https://t.me/trixel_movies"
                 )
             ],
             [
                 InlineKeyboardButton(
                     "➕ Add Me To Your Group",
-                    url="https://t.me/YourBotUserName?startgroup=true"
+                    url="https://t.me/@tony_stark_v3_bot?startgroup=true"
                 )
             ],
             [
                 InlineKeyboardButton(
                     "📸 Follow on Instagram",
-                    url="https://instagram.com/your_instagram_id"
+                    url="https://www.instagram.com/sreehari_._pradeep?igsh=YWMzMzRzZWx2dWFy"
                 )
             ]
         ]
     )
 
     await message.reply_photo(
-        photo="start.jpg",   # 🔁 Or use Image URL
+        photo="https://graph.org/file/1ce662520b4550b4f22cb-5fc38f4bc713674a61.jpg",   # 🔁 Or use Image URL
         caption=
         "🍿 **Welcome!** 🍿\n\n"
         "I am the filter bot of the **Trixel Movie** group 🎬.\n"
