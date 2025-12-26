@@ -1,5 +1,8 @@
+import random
+
+images = ["start1.jpg", "start2.jpg"]  # Local files only
 await message.reply_photo(
-    photo=open("https://graph.org/file/62386b57bf0394d7bd917-959daf5976f788890f.jpg https://graph.org/file/45f2868f0396506971dd4-319c9643069396cfbb.jpg", "rb"),
+    photo=open(random.choice(images), "rb"),
     caption="Welcome text",
     reply_markup=buttons
 )
