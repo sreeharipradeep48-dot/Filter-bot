@@ -48,7 +48,7 @@ async def start(client, message):
         reply_markup=buttons
     )
 
-@app.on_message(filters.text & ~filters.command())
+@app.on_message(filters.text & ~filters.regex("^/"))
 async def auto_filter(client, message):
     text = message.text.lower()
 
